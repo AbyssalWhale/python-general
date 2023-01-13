@@ -21,3 +21,23 @@ print(f"zero and next item{myLetters[0:1]}")
 print(f"next item{myLetters[:1]}")
 print(f"{list(range(20))[::2]}")
 print(f"\nreverse order{list(range(20))[::-1]}")
+
+# List Unpacking
+print("\n-Last Unpacking-")
+myLastUnpackingNumber = [1, 2, 3]
+first, second, third = myLastUnpackingNumber
+print(first)
+print(second)
+print(third)
+
+myLastUnpackingNumber = [1, 2, 3, 4, 5, 6]
+first, second, *restItems = myLastUnpackingNumber
+print(f"\n{first}")
+print(second)
+print(restItems)
+
+myLastUnpackingNumber = [1, 2, 3, 4, 5, 6]
+first, *restItems, last = myLastUnpackingNumber
+print(f"\nFirst: {first}")
+print(f"Last: {last}")
+print(restItems)
