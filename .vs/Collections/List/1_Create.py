@@ -1,3 +1,6 @@
+# Stack - LIFO
+# Queues - FIFO
+
 # List
 
 nyStringsList = ["K", "E", "R", "A", "S"]
