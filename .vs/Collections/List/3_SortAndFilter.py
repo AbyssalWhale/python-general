@@ -106,3 +106,6 @@ if not DEQUE_LIST:
     print("DEQUE_LIST is empty")
 else:
     print("DEQUE_LIST is NOT empty")
+
+
+#
