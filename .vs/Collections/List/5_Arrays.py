@@ -1,6 +1,5 @@
 from array import array
 
-# Arrays are readonly
 # i - is type code -> python 3 typecode -> google
 numbers = array("i", [1, 2, 3])
 
