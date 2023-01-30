@@ -28,3 +28,8 @@ for record in POINTS.items():
 
 for key, value in POINTS.items():
     print(f"KEY: {key} VALUE: {value}")
+
+# Use comprehension to create dictionary from list
+MY_LIST = range(5)
+MY_DIC = {x: x * 2 for x in MY_LIST}
+print(MY_DIC)
