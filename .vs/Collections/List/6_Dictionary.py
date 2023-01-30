@@ -1,4 +1,5 @@
 # key - only immutable types - string or int
+# key - are unique. Duplicates will be ignored
 
 POINTS = {"x": 1, "y": 2}
 POINTS_FUNC = dict(x=1, y=2)
