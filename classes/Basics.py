@@ -1,3 +1,8 @@
+# pass - to create just empty class
+class EmptyClass:
+    pass
+
+
 class Point:
     # This attributes (varriable) are always static
     default_color = "blue"
@@ -25,7 +30,8 @@ point.result = point.x + point.y
 print(point.result)
 
 print(type(point))
-print(isinstance(point, int))
+print(f"Isinstance: {isinstance(point, int)}")
+print(f"Issubclass: {issubclass(type(point), int)}")
 
 print(point.default_color)
 print(Point.default_color)
