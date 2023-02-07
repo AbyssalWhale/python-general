@@ -1,3 +1,8 @@
+# Create Custom Exception - must finish with word 'Error' and inherited from Exception
+class InvalidAgeCustomError(Exception):
+    pass
+
+
 try:
     AGE = int(input("Age:"))
     X_FACTOR = 10 / AGE
@@ -25,7 +30,8 @@ print("--Custom Exceptions--")
 
 def func_withException(age):
     if age <= 0:
-        raise Exception("Age can not be zero or less")
+        raise InvalidAgeCustomError(
+            "Age can not be zero or less. Custom Exception1")
     return 10 / age
 
 

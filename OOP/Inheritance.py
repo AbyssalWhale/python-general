@@ -33,23 +33,11 @@ print(isinstance(racoon, Animal))
 print(issubclass(type(racoon), Animal))
 
 # Multiple Inheritance:
+
+
 class TestClass:
     pass
 
 
 class MultiAnimal(Animal, TestClass):
     pass
-
-
-# Polymorphism (Overriding methods)
-# Constructors are overrided and not called one by one from parent to child
-class Mammal(Animal):
-    def __init__(self, Name: str, Age: int) -> None:
-        # Calling parent constructor
-        super().__init__(Name)
-        self.age = Age
-
-
-mammal = Mammal("Olol", 10)
-print(mammal.name)
-print(mammal.age)
