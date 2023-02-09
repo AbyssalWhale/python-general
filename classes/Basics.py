@@ -43,3 +43,26 @@ print(point.default_color)
 print(Point.default_color)
 
 print(f"Default color hidden: {point.__default_color_private}")
+
+
+# Extending Buil-It Types
+
+# Extending string
+class CustomStr(str):
+    def duplicate(self):
+        return self + self
+
+
+text = CustomStr("Python")
+print(text.lower())
+
+
+# Extending append method for lists
+class TrackableList(list):
+    def append(self, object):
+        print("Append called")
+        super().append(object)
+
+
+myList = TrackableList()
+myList.append(1)
