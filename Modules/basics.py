@@ -7,5 +7,3 @@
 
 from example.shopping.sales import calc_shipping
 from example.shopping import sales
-
-sales.calc_shipping()
