@@ -1,5 +1,5 @@
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 
 # returns current date time as time stamp
@@ -38,3 +38,13 @@ print(f"formatted month: {DATETIME_OBJ.month}")
 # Convert DateTime to string
 DATETIME_STRING = DATETIME_OBJ.strftime("%Y/%m")
 print(DATETIME_STRING)
+
+
+# -- timedelta represents duration --
+
+DT1 = datetime(2018, 1, 1)
+DT2 = datetime.now()
+DURATION = DT2 - DT1
+print(DURATION)
+print(DURATION.days)
+print(DURATION.seconds)
